@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All-Year Discussions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>All-Year Students Discussions</h1>
+
+    <div id="semester-tabs">
+        <button onclick="showChat('semester1')">Semester 1</button>
+        <button onclick="showChat('semester2')">Semester 2</button>
+        <button onclick="showChat('semester3')">Semester 3</button>
+        <button onclick="showChat('semester4')">Semester 4</button>
+        <button onclick="showChat('semester5')">Semester 5</button>
+        <button onclick="showChat('semester6')">Semester 6</button>
+        <button onclick="showChat('semester7')">Semester 7</button>
+        <button onclick="showChat('semester8')">Semester 8</button>
+    </div>
+
+    <div id="chat-section">
+        <h3 id="chat-title">Select a Semester</h3>
+        <textarea id="chat-box" placeholder="Type your message..."></textarea>
+        <button onclick="sendMessage()">Send</button>
+        <div id="chat-messages"></div>
+    </div>
+
+    <h2>Upload Notes</h2>
+    <input type="file" id="upload-notes">
+    <button onclick="uploadNotes()">Upload</button>
+
+    <script src="app.js"></script>
+</body>
+</html>
